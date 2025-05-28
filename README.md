@@ -1,7 +1,9 @@
 # f1-race-winner-predictor
 # F1 Race Result Predictor
 
-Welcome to the **F1 Race Result Predictor**, a machine learning-powered web application that predicts the outcomes of Formula 1 races based on past performance, tyre data, and weather conditions. Built with **Python**, **Flask**, **Pandas**, and **Scikit-learn**, this project integrates real F1 datasets and FastF1 API for data enrichment.
+A comprehensive F1 Race Predictor application that simulates AI-based race predictions based on user-selected weather conditions, tire compounds, and track characteristics. The app features a modern, responsive interface with F1-inspired design elements and realistic prediction algorithms.
+
+The prediction engine analyzes driver skills, weather effects, tire performance, and track characteristics to generate race results with position changes, reflecting how these factors would affect real race outcomes. The intuitive UI allows users to experiment with different conditions to see how they impact race results.
 
 ---
 
