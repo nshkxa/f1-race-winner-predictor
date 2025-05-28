@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --f1-red: 225 6 0;
+    --f1-blue: 0 0 102;
+    --f1-silver: 241 242 243;
+    --f1-black: 27 27 27;
+    --f1-white: 255 255 255;
+  }
+  
+  body {
+    @apply font-sans antialiased text-gray-900 bg-gray-50;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight;
+  }
+  
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-[rgb(var(--f1-red))] text-white hover:bg-[rgb(var(--f1-red)/0.9)] focus:ring-[rgb(var(--f1-red))];
+  }
+  
+  .btn-secondary {
+    @apply bg-[rgb(var(--f1-blue))] text-white hover:bg-[rgb(var(--f1-blue)/0.9)] focus:ring-[rgb(var(--f1-blue))];
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:ring-gray-500;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
+  
+  .input {
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[rgb(var(--f1-red))] focus:border-[rgb(var(--f1-red))];
+  }
+  
+  .select {
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[rgb(var(--f1-red))] focus:border-[rgb(var(--f1-red))];
+  }
+  
+  .slider {
+    @apply w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    @apply appearance-none w-6 h-6 rounded-full bg-[rgb(var(--f1-red))] cursor-pointer;
+  }
+}
+
+/* Animation for race predictions */
+@keyframes raceAnimation {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.race-animation {
+  animation: raceAnimation 0.5s ease-out forwards;
+}
+
+/* Tire compound indicators */
+.tire-soft {
+  @apply bg-red-500;
+}
+
+.tire-medium {
+  @apply bg-yellow-500;
+}
+
+.tire-hard {
+  @apply bg-white border border-gray-300;
+}
+
+.tire-intermediate {
+  @apply bg-green-500;
+}
+
+.tire-wet {
+  @apply bg-blue-500;
+}
+
+/* Weather indicators */
+.weather-sunny {
+  @apply text-yellow-500;
+}
+
+.weather-cloudy {
+  @apply text-gray-400;
+}
+
+.weather-rainy {
+  @apply text-blue-400;
+}
+
+.weather-stormy {
+  @apply text-purple-600;
+}
+
+/* Track surface indicators */
+.track-dry {
+  @apply bg-gray-300;
+}
+
+.track-damp {
+  @apply bg-gray-400;
+}
+
+.track-wet {
+  @apply bg-blue-300;
+}
+
+/* Team colors */
+.team-mercedes {
+  @apply bg-teal-500;
+}
+
+.team-redbull {
+  @apply bg-blue-800;
+}
+
+.team-ferrari {
+  @apply bg-red-600;
+}
+
+.team-mclaren {
+  @apply bg-orange-500;
+}
+
+.team-aston-martin {
+  @apply bg-green-700;
+}
+
+.team-alpine {
+  @apply bg-blue-500;
+}
+
+.team-williams {
+  @apply bg-blue-600;
+}
+
+.team-alphatauri {
+  @apply bg-navy-500;
+}
+
+.team-alfa-romeo {
+  @apply bg-red-800;
+}
+
+.team-haas {
+  @apply bg-gray-800;
+}
