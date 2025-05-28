@@ -1,4 +1,3 @@
-# f1-race-winner-predictor
 # F1 Race Result Predictor
 
 A comprehensive F1 Race Predictor application that simulates AI-based race predictions based on user-selected weather conditions, tire compounds, and track characteristics. The app features a modern, responsive interface with F1-inspired design elements and realistic prediction algorithms.
